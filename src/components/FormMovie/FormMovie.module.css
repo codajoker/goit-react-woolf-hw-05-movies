@@ -1,0 +1,28 @@
+.form {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px; /* Отступ между элементами формы */
+  margin-bottom: 20px; /* Отступ снизу для формы */
+}
+
+.input {
+  padding: 8px; /* Внутренние отступы для input */
+  border: 1px solid #ccc; /* Граница для input */
+  border-radius: 4px; /* Скругление углов для input */
+  font-size: 16px; /* Размер шрифта для input */
+  width: 300px;
+}
+
+.button {
+  padding: 8px 16px; /* Внутренние отступы для кнопки */
+  background-color: #007bff; /* Цвет фона для кнопки */
+  color: white; /* Цвет текста для кнопки */
+  border: none; /* Убрать границу кнопки */
+  border-radius: 4px; /* Скругление углов для кнопки */
+  cursor: pointer; /* Курсор в виде указателя для кнопки */
+  font-size: 16px; /* Размер шрифта для кнопки */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Цвет фона для кнопки при наведении */
+}

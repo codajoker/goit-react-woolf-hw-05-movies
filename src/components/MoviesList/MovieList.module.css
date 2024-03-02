@@ -1,0 +1,27 @@
+.movieList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Отступы между элементами списка */
+}
+
+.movieItem {
+  padding: 10px; /* Отступы внутри каждого элемента списка */
+  border-radius: 8px; /* Скругление углов элементов списка */
+}
+
+.movieLink {
+  background-color: #f0f0f0; /* Цвет фона для каждого элемента списка */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для элементов списка */
+  padding: 10px;
+  color: #007bff; /* Цвет ссылок */
+  text-decoration: none; /* Убрать подчёркивание у ссылок */
+  transition: color 0.3s ease-in-out; /* Анимация изменения цвета ссылок */
+}
+
+.movieLink:hover,
+.movieLink:focus {
+  color: #0056b3; /* Цвет ссылок при наведении или фокусе */
+}

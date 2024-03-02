@@ -1,0 +1,29 @@
+.nav {
+  background-color: #f0f0f0; /* Цвет фона навигационной панели */
+  padding: 20px; /* Отступы вокруг навигационной панели */
+  display: flex; /* Используем flexbox для расположения элементов */
+  gap: 20px; /* Отступы между элементами внутри flex контейнера */
+  border-radius: 8px; /* Скругление углов навигационной панели */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для навигационной панели */
+}
+
+.link,
+.activeLink {
+  color: #555; /* Цвет ссылок */
+  text-decoration: none; /* Убрать подчёркивание у ссылок */
+  padding: 10px; /* Внутренние отступы для ссылок */
+  border-radius: 4px; /* Скругление углов ссылок */
+  transition: background-color 0.3s, color 0.3s; /* Анимация изменения цвета и фона */
+}
+
+.link:hover,
+.activeLink:hover {
+  background-color: #ddd; /* Цвет фона при наведении */
+  color: #333; /* Цвет текста при наведении */
+}
+
+.activeLink {
+  color: #007bff; /* Цвет активной ссылки */
+  font-weight: bold; /* Сделать шрифт активной ссылки жирным */
+  background-color: #e7f1ff; /* Цвет фона активной ссылки */
+}

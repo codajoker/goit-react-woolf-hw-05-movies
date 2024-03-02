@@ -1,0 +1,31 @@
+.castList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Отступы между элементами списка */
+}
+
+.castItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px; /* Задаем ширину, чтобы изображения и текст не растягивались */
+}
+
+.actorImage {
+  border-radius: 50%; /* Делаем изображение круглым */
+  width: 100px; /* Устанавливаем ширину изображения */
+  height: 100px; /* Устанавливаем высоту изображения, чтобы оно было круглым */
+  object-fit: cover; /* Обеспечиваем, чтобы изображение покрывало всю область */
+}
+
+.actorDetails {
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+.characterName,
+.actorName {
+  display: block; /* Блочное отображение для переноса текста на новую строку */
+  margin-top: 5px; /* Отступ сверху */
+}

@@ -1,0 +1,45 @@
+.goBackLink {
+  width: 70px;
+  text-align: center;
+  display: block;
+  margin: 20px 0;
+  border: none;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.goBackLink:hover {
+  text-decoration: underline;
+}
+
+.additionalInfo {
+  margin-top: 20px;
+}
+
+.infoList {
+  list-style: none;
+  padding: 0;
+}
+.navItem {
+  margin-top: 10px;
+}
+.navLink,
+.activeNavLink {
+  text-decoration: none;
+  color: #007bff;
+  padding: 5px 10зч;
+}
+
+.activeNavLink {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.navLink:hover,
+.activeNavLink:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,39 @@
+.movieDetails {
+  display: flex;
+  gap: 20px; /* Отступ между изображением и содержимым */
+  margin-bottom: 20px;
+}
+
+.movieImage {
+  border-radius: 8px; /* Скругление углов изображения */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для изображения */
+}
+
+.movieContent {
+  max-width: 600px; /* Максимальная ширина содержимого */
+}
+
+.movieTitle {
+  margin: 0;
+  color: #007bff; /* Цвет заголовка */
+}
+
+.userScore {
+  display: block; /* Чтобы занимал всю строку */
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.overview,
+.genresList {
+  margin-top: 10px;
+}
+
+.genreItem {
+  list-style-type: none; /* Убрать маркеры списка */
+  padding: 5px 0; /* Отступы для элементов списка */
+}
+
+.genresList {
+  padding: 0;
+}
