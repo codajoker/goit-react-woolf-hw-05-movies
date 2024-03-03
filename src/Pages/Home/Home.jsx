@@ -12,7 +12,7 @@ export const Home = () => {
   return (
     <div>
       <h2> Trending Today</h2>
-      <MovieList arrayFilm={arrayFilm} state={'/'} />
+      {arrayFilm.length > 0 && <MovieList arrayFilm={arrayFilm} />}
     </div>
   );
 };

@@ -3,7 +3,13 @@ import styles from './FormMovie.module.css'; // Убедитесь, что пу�
 
 const FormMovie = ({ onSubmitForm, setInputValue }) => {
   return (
-    <form onSubmit={e => onSubmitForm(e)} className={styles.form}>
+    <form
+      onSubmit={e => {
+        e.preventDefault();
+        onSubmitForm(e);
+      }}
+      className={styles.form}
+    >
       <input
         onChange={e => setInputValue(e.target.value)}
         type="text"

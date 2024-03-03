@@ -15,18 +15,18 @@ const Review = () => {
 
   return (
     <>
-      <ul className={styles.reviewsList}>
-        {reviews.length > 0 ? (
-          reviews.map(review => (
+      {reviews.length > 0 ? (
+        <ul lassName={styles.reviewsList}>
+          {reviews.map(review => (
             <li key={review.id} className={styles.reviewItem}>
               <h2 className={styles.reviewAuthor}>Author: {review.author}</h2>
               <p className={styles.reviewContent}>Content: {review.content}</p>
             </li>
-          ))
-        ) : (
-          <span className={styles.noReviews}>Oops, no reviews yet.</span>
-        )}
-      </ul>
+          ))}
+        </ul>
+      ) : (
+        <span className={styles.noReviews}>Oops, no reviews yet.</span>
+      )}
     </>
   );
 };

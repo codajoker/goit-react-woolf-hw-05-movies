@@ -20,9 +20,7 @@ export const MovieDetails = () => {
       setMovie(data);
     });
   }, [movieId]);
-  const movieDetailsPageMarkupMemo = useMemo(() => {
-    return movie && <MovieDetailsPageMurkup movie={movie} />;
-  }, [movie]);
+
   return (
     <>
       <Link to={location?.state ?? '/'} className={styles.goBackLink}>
@@ -31,7 +29,7 @@ export const MovieDetails = () => {
 
       {movie && (
         <>
-          {movieDetailsPageMarkupMemo}
+          <MovieDetailsPageMurkup movie={movie} />
           <div className={styles.additionalInfo}>
             <h2>Additional information</h2>
             <ul className={styles.infoList}>
