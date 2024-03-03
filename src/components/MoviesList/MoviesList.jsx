@@ -12,7 +12,7 @@ const MovieList = ({ arrayFilm }) => {
             className={styles.movieLink}
             state={location}
           >
-            {film.title}
+            {film.title ? film.title : film.name}
           </Link>
         </li>
       ))}

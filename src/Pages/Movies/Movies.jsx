@@ -11,11 +11,10 @@ export const Movie = () => {
 
   useEffect(() => {
     const query = searchParams.get('query');
-    if (!query) {
-      return apiSearch(searchParams.get('query')).then(({ data }) => {
-        return setArrayFilm(data.results);
-      });
-    }
+    if (!query) return;
+    apiSearch(query).then(({ data }) => {
+      return setArrayFilm(data.results);
+    });
   }, [searchParams]);
   const onSubmitForm = e => {
     setSearchParams({ query: inputValue.trim() });
